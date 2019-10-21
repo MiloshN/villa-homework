@@ -1,0 +1,61 @@
+@import "./mixins";
+
+footer {
+  position: relative;
+  left: 0;
+  bottom: -10px;
+  color: color(colorText);
+  text-align: center;
+  padding: 1.8rem 0.5rem;
+  width: 100%;
+  border-top: 5px solid color(backgrondColorBefore);
+  h1 {
+    font-size: 16px;
+    p {
+      font-size: 12px;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer-middle {
+  &__footer-pad {
+    &--text {
+      text-align: left;
+      margin-top: -12px;
+      color: color(colorText);
+      h4 {
+        font-size: 14px;
+      }
+      ul {
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+
+.footer-pad-text-p {
+  font-size: 12px;
+  margin-bottom: 0;
+  opacity: 0.6;
+  padding-right: 22px;
+}
+
+.footer-images {
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+}
+
+.footer-images img {
+  width: 102px;
+  height: auto;
+  padding: 5px;
+  margin-top: -12px;
+}
+
+.list-unstyled {
+  opacity: 0.6;
+}

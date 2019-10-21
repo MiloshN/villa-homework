@@ -1,0 +1,129 @@
+@import "./mixins";
+
+.header-navbar {
+  position: relative;
+}
+
+.header-list {
+  &__header-logo {
+    position: absolute;
+    top: -58px;
+    left: 22px;
+    width: 150px;
+    height: 150px;
+    z-index: 1;
+    @include smallScreen {
+      width: 50px;
+      height: 50px;
+      left: 10px;
+    }
+  }
+}
+
+/* Navigation bar */
+
+.navbar-brand {
+  width: 150px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.navbar-nav {
+  font-weight: bold;
+}
+
+.navbar .navnar-dropadown-menu {
+  background: #82412f;
+  position: relative;
+}
+
+.navbar .navnar-dropadown-menu::before {
+  position: absolute;
+  content: "";
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  clip-path: polygon(50% 0, 0% 100%, 100% 100%);
+  width: 30px;
+  height: 20px;
+  background: #82412f;
+}
+
+.nav-item {
+  &__nav-link {
+    padding-right: 2.2rem;
+    padding-left: 1.5rem;
+    color: rgb(19, 4, 4);
+    color: #110501;
+    font-size: 17px;
+    font-weight: 700;
+    &:hover {
+      color: #f8a036;
+      text-decoration: none;
+      color: #f8a036;
+    }
+  }
+}
+
+.navbar-collapse {
+  z-index: 9999;
+}
+
+.dropdown-item {
+  background: #82412f;
+  text-align: left;
+  &:hover {
+    text-decoration: none;
+    color: #f8a036;
+    background-color: #82412f;
+  }
+}
+
+.dropdown-menu {
+  left: -25%;
+}
+
+.dropdown:hover > .dropdown-menu {
+  display: block;
+}
+
+.navnar-dropadown-menu:hover {
+  text-decoration: none;
+  color: #f8a036;
+}
+
+.nav-list-item {
+  float: right;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.navnar-dropadown-menu {
+  > a {
+    &:not(:last-child) {
+      border-bottom: 1px solid white;
+    }
+  }
+}
+
+.navnar-dropadown-menu {
+  > a {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* Second Logo */
+
+.list-item-logo {
+  &__navbar-menu-logo-right {
+    position: absolute;
+    top: 38px;
+    right: 58px;
+    width: 155px;
+    height: 150px;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,38 @@
+
+.middle { 
+    &__middle-left {
+        h1 {
+            font-size: 2.5rem;
+            text-align: left;
+            padding: 50px 0px 15px 0px;
+            font-weight: 800;
+            color: color(colorSite);
+            p { font-size: 15px;
+            margin-top: 0;
+            margin-bottom: 0;
+             }
+        }
+      }
+    
+    &__middle-right {
+      padding-left: 100px;
+      padding-top: 60px;
+      }
+    }
+    
+    .custom-custom-btn {
+      background-color: color(primaryBtn);
+      border-color: color(colorSite);
+      margin: 0 auto;
+      margin-top: 0px;
+      padding: 12px;
+      padding-left: 35px;
+      padding-right: 35px;
+      -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.64);
+      -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.64);
+      box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.64);
+    &:hover {
+      background-color: color(secondaryBtn);
+      border-color: color(borderOnlyColor);
+     }
+    }

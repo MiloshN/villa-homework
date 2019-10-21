@@ -1,0 +1,17 @@
+$colors: (
+backgroudColor: #b3532d,
+backgrondColorBefore: #f8a036,
+primaryBtn: #82412f,
+secondaryBtn: #a35540,
+borderBottom: 5px solid #f5e617,
+borderColor: 2px solid #82412f,
+borderOnlyColor: #aa624e,
+topLinkColor: rgb(223, 223, 29),
+colorSite: #82412f,
+colorText: #fff,
+messageBtn: #009edd
+);
+
+@function color($color-name) {
+  @return map-get($colors, $color-name)
+ }

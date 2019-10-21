@@ -1,0 +1,107 @@
+
+.top-track {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 5px 0;
+    background: #a25e40;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    background: -moz-linear-gradient(
+      left,
+      #a25e40 0%,
+      #d28935 31%,
+      #894830 51%,
+      #82412f 71%,
+      #82412f 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      right top,
+      color-stop(0%, #a25e40),
+      color-stop(31%, #d28935),
+      color-stop(51%, #894830),
+      color-stop(71%, #82412f),
+      color-stop(100%, #82412f)
+    );
+    background: -webkit-linear-gradient(
+      left,
+      #a25e40 0%,
+      #d28935 31%,
+      #894830 51%,
+      #82412f 71%,
+      #82412f 100%
+    );
+    background: -o-linear-gradient(
+      left,
+      #a25e40 0%,
+      #d28935 31%,
+      #894830 51%,
+      #82412f 71%,
+      #82412f 100%
+    );
+    background: -ms-linear-gradient(
+      left,
+      #a25e40 0%,
+      #d28935 31%,
+      #894830 51%,
+      #82412f 71%,
+      #82412f 100%
+    );
+    background: linear-gradient(
+      to right,
+      #a25e40 0%,
+      #d28935 31%,
+      #894830 51%,
+      #82412f 71%,
+      #82412f 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#a25e40', endColorstr='#82412f', GradientType=1);
+    border-bottom: color(borderBottom);
+  }
+  
+  /* Language Navigation */
+  
+  .top-col {
+    height: 100%;
+  }
+  
+  .track-container {
+    padding: 0 30px;
+  }
+  
+  .list-inline-item {
+    &__num-link {
+      color: color(colorText);
+      text-decoration: none;
+      font-weight: normal;
+      font-size: 15px;
+      margin-right: 10px;
+      &:hover {
+        color: color(topLinkColor);
+      }
+    }
+  }
+  
+  
+  .lang-list {
+    &__item-link {
+      color: #fff;
+      font-weight: normal;
+      text-decoration: underline;
+      transition: all 0.5s ease;
+      &:hover {
+        color: color(topLinkColor);
+      }
+      &--active {
+          font-weight: bold;
+          color: color(topLinkColor);
+          text-decoration: none;
+      }
+      &--active:hover {
+            color: color(topLinkColor);
+          }
+      }
+  }

@@ -1,0 +1,87 @@
+
+body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  font-family: "Lato", sans-serif;
+}
+
+.overlay {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
+    background: color(backgroudColor);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: -moz-linear-gradient(
+      top,
+      #b3532d 0%,
+      #9f4b29 43%,
+      #853c24 51%,
+      #783620 71%,
+      #672d1c 100%
+    );
+    background: -webkit-gradient(
+      left top,
+      left bottom,
+      color-stop(0%, #b3532d),
+      color-stop(43%, #9f4b29),
+      color-stop(51%, #853c24),
+      color-stop(71%, #783620),
+      color-stop(100%, #672d1c)
+    );
+    background: -webkit-linear-gradient(
+      top,
+      #b3532d 0%,
+      #9f4b29 43%,
+      #853c24 51%,
+      #783620 71%,
+      #672d1c 100%
+    );
+    background: -o-linear-gradient(
+      top,
+      #b3532d 0%,
+      #9f4b29 43%,
+      #853c24 51%,
+      #783620 71%,
+      #672d1c 100%
+    );
+    background: -ms-linear-gradient(
+      top,
+      #b3532d 0%,
+      #9f4b29 43%,
+      #853c24 51%,
+      #783620 71%,
+      #672d1c 100%
+    );
+    background: linear-gradient(
+      to bottom,
+      #b3532d 0%,
+      #9f4b29 43%,
+      #853c24 51%,
+      #783620 71%,
+      #672d1c 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b3532d', endColorstr='#672d1c', GradientType=0);
+  }
+  
+  /* Upper background color */
+  
+  .overlay::before {
+    position: absolute;
+    content: "";
+    top: -38%;
+    left: 50%;
+    width: 2555px;
+    height: 80%;
+    background: color(backgrondColorBefore);
+    border-radius: 50%;
+    transform: translateX(-50%);
+    border: color(borderBottom);
+    z-index: 2;
+    overflow: hidden;
+  }
